@@ -1,0 +1,22 @@
+Firebase
+    Cadastrar campanhas.
+        Nome da campanha
+        Data da campanha
+
+Sistema de Cadastro
+    Nome
+    Whatsapp
+    Instagram
+    Email
+
+Lista de Cadastrados
+    Clicar em cada usuário para ver seu cadastro
+
+
+Lista de campanhas
+    botão de "Iniciar Sorteio"
+
+Iniciar Sorteio
+    O sistema funcionará apenas para os usuários que preencheres todos os campos (deixar todos os campos como REQUIRED)
+    Sistema randomico para escolher um usuário
+    Ao ser escolhido, aparecer todas as informações, menos o email e whatsapp (para ver será necessário clicar no icone de visão)
