@@ -1,0 +1,51 @@
+yarn create react-app front-end --template typescript
+
+yarn add react-router-dom
+
+yarn add axios
+
+yarn add react-router-dom axios firebase react-redux
+
+yarn add react-icons
+    https://react-icons.github.io/react-icons/
+
+REACT_APP_API_URL=https://fakestoreapi.com
+
+yarn add styled-components
+
+yarn add -D @types/styled-components
+    instalar o tipo que é necessário
+
+vscode-styled-components
+    extensão
+    
+styled-components-snippets
+    extensão
+    exsc - criar uma constante completa para preencher
+
+Auto Close Tag
+    extensão
+    Auto preencher tag
+
+Ctrl+P
+    Pesquisar página do projeto para abrir
+
+Ctrl+Espaço
+    Pegar todos os atributos disponíves do componente
+
+yarn add react-hook-form
+    https://react-hook-form.com/
+
+yarn add validator
+    yarn add -D @types/validator
+    checar os campos de input
+
+yarn add firebase
+
+yarn add react-spinners
+    Biblioteca Animação Loading
+        Documentação:
+            https://www.npmjs.com/package/react-spinners
+
+        Demonstração:
+            https://www.davidhu.io/react-spinners/
