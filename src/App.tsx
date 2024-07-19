@@ -15,6 +15,7 @@ import { useAppSelector } from './hooks/redux.hooks'
 import { loginUser, logoutUser } from './store/toolkit/user/user.slice'
 import LoginPage from './pages/login/login.pages';
 import SignUpPage from './pages/sign-up/sign-up.pages';
+import Participantes from './pages/campanhas/participantes.pages';
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/metodovfp" element={<MetodoVFP />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/participantes/:nome" element={<Participantes />} />
       </Routes>
     </BrowserRouter>
   );
