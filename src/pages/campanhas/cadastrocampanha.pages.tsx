@@ -18,6 +18,8 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 interface CadastroCampanhaForm {
     nome: string;
     status: "Ativado" | "Desativado";
+    dataInicio: string; // Novo campo
+    dataFinal: string;  // Novo campo
 }
 
 const CadastroCampanha = () => {
@@ -37,7 +39,9 @@ const CadastroCampanha = () => {
             await setDoc(campanhaRef, {
                 nome: data.nome,
                 status: data.status,
-                data: new Date().toISOString(), // Data atual
+                dataInicio: data.dataInicio, // Adiciona a data de início
+                dataFinal: data.dataFinal,   // Adiciona a data final
+                dataCadastro: new Date().toISOString(), // Data atual
                 participantes: 0 // Inicialmente, 0 participantes
             });
             console.log("Cadastro de campanha realizado com sucesso!");
@@ -87,7 +91,6 @@ const CadastroCampanha = () => {
                                     )}
                                 </div>
                                 <div className="mb-2">
-                                    <label htmlFor="status" className="block text-sm font-medium text-gray-700">Status</label>
                                     <select
                                         id="status"
                                         {...register("status", { required: "Status é obrigatório" })}
@@ -100,6 +103,32 @@ const CadastroCampanha = () => {
                                     {errors.status && (
                                         <Typography variant="small" color="red" className="mt-1">
                                             {errors.status.message}
+                                        </Typography>
+                                    )}
+                                </div>
+                                <div className="mb-2">
+                                    <Input
+                                        crossOrigin=""
+                                        type="date"
+                                        label="Data de Início"
+                                        {...register("dataInicio", { required: "Data de início é obrigatória" })}
+                                    />
+                                    {errors.dataInicio && (
+                                        <Typography variant="small" color="red" className="mt-1">
+                                            {errors.dataInicio.message}
+                                        </Typography>
+                                    )}
+                                </div>
+                                <div className="mb-2">
+                                    <Input
+                                        crossOrigin=""
+                                        type="date"
+                                        label="Data Final"
+                                        {...register("dataFinal", { required: "Data final é obrigatória" })}
+                                    />
+                                    {errors.dataFinal && (
+                                        <Typography variant="small" color="red" className="mt-1">
+                                            {errors.dataFinal.message}
                                         </Typography>
                                     )}
                                 </div>

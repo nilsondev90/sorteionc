@@ -139,7 +139,7 @@ const Header2 = () => {
                     onClick={handleLogoClick}
                 >
                     <img className="h-5" src={LogoNiceCoimbra} alt="Logo Nice Coimbra" />
-                    <span className='pl-3'>Nice Coimbra</span>
+                    <span className='pl-3'>Site</span>
 
                 </Typography>
                 <div className="flex items-center gap-4">

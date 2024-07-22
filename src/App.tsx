@@ -16,6 +16,9 @@ import { loginUser, logoutUser } from './store/toolkit/user/user.slice'
 import LoginPage from './pages/login/login.pages';
 import SignUpPage from './pages/sign-up/sign-up.pages';
 import Participantes from './pages/campanhas/participantes.pages';
+import Sorteio from './pages/campanhas/Sorteio';
+import Ganhador from './pages/campanhas/Ganhador';
+import Ganhadores from './pages/campanhas/Ganhadores';
 
 function App() {
 
@@ -66,6 +69,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/participantes/:nome" element={<Participantes />} />
+        <Route path="/sorteio/:nomeCampanha" element={<Sorteio />} />
+        <Route path="/ganhador/:nomeCampanha/:idGanhador" element={<Ganhador />} />
+        <Route path="/ganhadores/:nomeCampanha" element={<Ganhadores />} />
       </Routes>
     </BrowserRouter>
   );

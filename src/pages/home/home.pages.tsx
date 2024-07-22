@@ -15,9 +15,10 @@ const Home = () => {
             {/* <CadastroPremio campanha="ebook" /> */}
             <div className="w-full" style={{ background: "#f8ffff" }}>
                 <div className="mx-auto max-w-screen-2xl">
-                    <CadastroCampanha/>
+                    <CadastroCampanha />
                     <CadastroPremio campanha="ebook" />
                     <Campanhas />
+                    
                 </div>
             </div>
             {/* <CadastroPremio /> */}
